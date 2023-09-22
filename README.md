@@ -1,7 +1,7 @@
 # BankDatabaseWithJDBC
 This is Bank Management System application in Java.<br>
 In this project I have used Java And JDBC to create bank application.<br>
-Actions Performed:<br>
+<b>Actions Performed:</b><br>
 1) Adding bank Accounts<br>
 2) Deleting bank account<br>
 3) Find the particular account using Acc. no. and Name<br>
