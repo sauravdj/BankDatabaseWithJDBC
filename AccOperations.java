@@ -17,7 +17,7 @@ public class AccOperations {
 			flag = true;
 		} catch (Exception e) {
 			// TODO: handle exception
-			e.printStackTrace();
+			System.err.println("Can not create account :(  ...");
 		}
 		return flag;
 	}
@@ -32,15 +32,15 @@ public class AccOperations {
 				int accNo = set.getInt(1);
 				String name = set.getString("custName");
 				Double balance = set.getDouble("balance");
+				System.out.println("=======================");
 				System.out.println("Account no: "+accNo);
 				System.out.println("Account holder name: "+name);
 				System.out.println("Account Balance: "+balance);
-				System.out.println("=======================");
 			}
 			flag = true;
 		} catch (Exception e) {
 			// TODO: handle exception
-			e.printStackTrace();
+			System.err.println("Can not fetch account details :(");
 		}
 		return flag;
 	}
@@ -56,7 +56,8 @@ public class AccOperations {
 			flag = true;
 		} catch (Exception e){
 			// TODO: handle exception
-			e.printStackTrace();
+			System.err.println("Can not delete account details :(");
+			
 		}
 		return flag;
 	}
@@ -72,6 +73,7 @@ public class AccOperations {
 				int accNo = set.getInt("accNo");
 				String name = set.getString("custName");
 				Double balance = set.getDouble("balance");
+				System.out.println("=======================");
 				System.out.println("Account no: "+accNo);
 				System.out.println("Account holder name: "+name);
 				System.out.println("Account Balance: "+balance);
@@ -80,7 +82,8 @@ public class AccOperations {
 			flag = true;
 		}catch (Exception e){
 			// TODO: handle exception
-			e.printStackTrace();
+			System.err.println("Can not fetch account details :(");
+			
 		}
 		return flag;
 	}
@@ -97,7 +100,7 @@ public class AccOperations {
 			
 			double balance = set.getDouble("balance");
 			double newBalance = balance + amount;
-				
+			
 			String q1 = "update BankAccount set balance = ? where accNo = ?";	
 			PreparedStatement pstmt1 = conn.prepareStatement(q1);
 			pstmt1.setDouble(1,newBalance);
@@ -107,7 +110,7 @@ public class AccOperations {
             
 		}catch (Exception e){
 			// TODO: handle exception
-			e.printStackTrace();
+			System.err.println("Can not deposite amount :(");
 		}
 		return flag;
 	}
@@ -137,7 +140,7 @@ public class AccOperations {
 			
 		} catch (Exception e){
 			// TODO: handle exception
-			e.printStackTrace();
+			System.err.println("Something went wrong, can not withdraw amount :(");
 		}
 		return flag;
 	}

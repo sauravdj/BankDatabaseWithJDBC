@@ -13,7 +13,7 @@ public class Connector {
 	} 
 	catch (Exception e) {
 		// TODO: handle exception
-		e.printStackTrace();
+		System.err.println("Can not connect to database :(  ...");
 	}
 	  return conn;
   }
