@@ -2,7 +2,7 @@
 <b><u>Bank Management System using JDBC</b></u> <br>
 Developed by: Saurav D. Jadhav<br>
 In this project I have used Java And JDBC to create bank application.<br>
-Actions Performed:<br>
+<u><b>Actions Performed:</b></u><br>
 1) Adding bank Accounts<br>
 2) Deleting bank account<br>
 3) Find the particular account using Acc. no. and Name<br>
